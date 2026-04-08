@@ -4,6 +4,7 @@ import Featured from "@/components/Featured";
 import Catalog from "@/components/Catalog";
 import Promo from "@/components/Promo";
 import HowItWorks from "@/components/HowItWorks";
+import Services from "@/components/Services";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import TelegramButton from "@/components/TelegramButton";
@@ -17,6 +18,7 @@ const Index = () => {
       <Catalog />
       <Promo />
       <HowItWorks />
+      <Services />
       <ContactForm />
       <Footer />
       <TelegramButton />
