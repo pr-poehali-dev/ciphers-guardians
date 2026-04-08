@@ -49,17 +49,17 @@ export default function Catalog() {
   };
 
   return (
-    <section id="catalog" className="bg-neutral-50 px-6 py-24">
+    <section id="catalog" className="bg-neutral-50 px-4 sm:px-6 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
         <p className="uppercase text-sm tracking-widest text-neutral-500 mb-4">Каталог</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 leading-tight">
           Комплекты по моделям
         </h2>
-        <p className="text-neutral-500 mb-14 text-base max-w-xl">
+        <p className="text-neutral-500 mb-10 sm:mb-14 text-base max-w-xl">
           Каждый комплект полностью готов к установке — ничего докупать не нужно.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
           {PRODUCTS.map((p) => (
             <div
               key={p.id}
@@ -76,7 +76,7 @@ export default function Catalog() {
                 </div>
               )}
 
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-4 sm:p-6 flex flex-col flex-1">
                 <h3 className="text-lg font-bold text-neutral-900 mb-1 leading-snug">{p.model}</h3>
                 <p className="text-sm text-neutral-500 mb-4">Холодопроизводительность: {p.cooling}</p>
 
@@ -84,7 +84,7 @@ export default function Catalog() {
                   {p.oldPrice && (
                     <p className="text-sm text-neutral-400 line-through mb-0.5">{p.oldPrice} ₽</p>
                   )}
-                  <p className="text-3xl font-bold text-neutral-900">{p.price} <span className="text-base font-normal">₽</span></p>
+                  <p className="text-2xl sm:text-3xl font-bold text-neutral-900">{p.price} <span className="text-base font-normal">₽</span></p>
                 </div>
 
                 <ul className="flex flex-col gap-2 mb-8 flex-1">

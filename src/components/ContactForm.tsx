@@ -20,10 +20,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-white px-6 py-24 flex items-center justify-center">
+    <section id="contact" className="bg-white px-4 sm:px-6 py-16 sm:py-24 flex items-center justify-center">
       <div className="w-full max-w-2xl">
         <p className="uppercase text-sm tracking-widest text-neutral-500 mb-4">Бесплатный подбор</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 leading-tight">
           Подберём комплект<br />под вашу технику
         </h2>
         <p className="text-neutral-500 mb-10 text-base">
@@ -31,7 +31,7 @@ export default function ContactForm() {
         </p>
 
         {submitted ? (
-          <div className="border border-neutral-200 p-10 text-center">
+          <div className="border border-neutral-200 p-6 sm:p-10 text-center">
             <div className="text-4xl mb-4">✓</div>
             <h3 className="text-xl font-semibold text-neutral-900 mb-2">Заявка принята!</h3>
             <p className="text-neutral-500">Свяжемся с вами в течение 30 минут.</p>

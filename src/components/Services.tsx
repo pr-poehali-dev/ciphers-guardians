@@ -46,9 +46,9 @@ export default function Services() {
           Услуги
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {SERVICES.map((s, i) => (
-            <div key={i} className="border border-neutral-200 p-8 flex flex-col">
+            <div key={i} className="border border-neutral-200 p-5 sm:p-6 lg:p-8 flex flex-col">
               <div className="text-4xl mb-4">{s.icon}</div>
               <h3 className="text-xl font-bold text-neutral-900 mb-1">{s.title}</h3>
               <p className="text-blue-600 font-semibold text-sm mb-4">{s.price}</p>
@@ -68,7 +68,7 @@ export default function Services() {
         <div className="mt-12 text-center">
           <a
             href="#contact"
-            className="inline-block bg-neutral-900 text-white px-10 py-4 text-sm font-semibold uppercase tracking-wide hover:bg-neutral-700 transition-colors duration-300"
+            className="inline-block bg-neutral-900 text-white px-6 sm:px-10 py-3 sm:py-4 text-sm font-semibold uppercase tracking-wide hover:bg-neutral-700 transition-colors duration-300 w-full sm:w-auto text-center"
           >
             Оставить заявку
           </a>

@@ -26,15 +26,15 @@ export default function Hero() {
       </motion.div>
 
       <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-10 text-center text-white px-6">
-        <p className="text-sm md:text-base uppercase tracking-widest mb-4 opacity-80">Комплекты для МТЗ и сельхозтехники</p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+      <div className="relative z-10 text-center text-white px-4 sm:px-6">
+        <p className="text-xs sm:text-sm md:text-base uppercase tracking-widest mb-4 opacity-80">Комплекты для МТЗ и сельхозтехники</p>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
           КЛИМАТ<br/>В КАБИНЕ
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
+        <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
           Готовые комплекты кондиционеров для тракторов МТЗ, спецтехники и сельхозмашин — с установкой под ключ
         </p>
-        <button className="bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
+        <button className="bg-white text-black px-6 sm:px-8 py-3 text-sm uppercase tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer w-full sm:w-auto">
           Подобрать комплект
         </button>
       </div>
