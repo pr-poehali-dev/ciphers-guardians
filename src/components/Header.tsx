@@ -7,18 +7,24 @@ export default function Header({ className }: HeaderProps) {
     <header className={`absolute top-0 left-0 right-0 z-10 p-6 ${className ?? ""}`}>
       <div className="flex justify-between items-center">
         <div className="text-white text-sm uppercase tracking-wide font-bold">AiroMax</div>
-        <nav className="flex gap-8">
+        <nav className="flex items-center gap-8">
           <a
-            href="#about"
-            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
+            href="#catalog"
+            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm hidden sm:block"
           >
             Каталог
           </a>
           <a
             href="#contact"
-            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
+            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm hidden sm:block"
           >
             Контакты
+          </a>
+          <a
+            href="tel:+79513209983"
+            className="text-white hover:text-neutral-300 transition-colors duration-300 text-sm font-semibold tracking-wide border border-white/40 px-4 py-2 hover:border-white/80"
+          >
+            +7 951 320-99-83
           </a>
         </nav>
       </div>
